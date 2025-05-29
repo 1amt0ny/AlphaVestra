@@ -2,6 +2,8 @@
 
 An AI-powered tool for analyzing individual stocks and generating trading suggestions based on historical data and technical indicators.
 
+![Banner](assets/banner.png)
+
 ## Features
 - Rule-based strategies (moving averages, RSI, etc.)
 - Machine Learning predictions using XGBoost
