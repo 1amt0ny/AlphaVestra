@@ -1,0 +1,1 @@
+# Example rule-based strategy (e.g., moving average crossover)
