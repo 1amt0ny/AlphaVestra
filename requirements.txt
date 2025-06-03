@@ -1,8 +1,15 @@
-yfinance==0.2.28
-pandas
-numpy
-matplotlib
-ta
-xgboost
-scikit-learn
-streamlit
+# Core dependencies
+pandas>=2.2.0
+matplotlib>=3.8.0
+certifi>=2024.2.2
+python-dotenv
+
+# API client for market data
+polygon-api-client==1.12.0
+
+# Optional: for plotting inside notebooks
+jupyterlab>=4.0.0
+
+# If you plan to use machine learning later
+scikit-learn>=1.4.0
+xgboost>=2.0.0

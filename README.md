@@ -1,6 +1,6 @@
 ![Banner](assets/banner.png)
 
-An AI-powered tool for analyzing individual stocks and generating trading suggestions based on historical data and technical indicators.
+A data-driven tool for evaluating individual stocks and surfacing actionable signals using historical price data and rule-based or machine learning models.
 
 ## Features
 - Rule-based strategies (moving averages, RSI, etc.)
@@ -16,5 +16,32 @@ An AI-powered tool for analyzing individual stocks and generating trading sugges
 - `interface/`: Front-end for displaying suggestions
 
 ## Setup
+
+1. **Clone the repo:**
 ```bash
-pip install -r requirements.txt
+    git clone https://github.com/1amt0ny/AlphaVestra.git
+    cd AlphaVestra
+```
+
+2. **Create a virtual environment:**
+```bash
+    python -m venv .venv
+    source .venv/bin/activate  # or .venv\Scripts\activate on Windows
+```
+
+3. **Install dependencies:**
+```bash
+    pip install -r requirements.txt
+```
+
+4. **Create a `.env` file:**
+We use Polygon.io to acquire the data. 
+```bash
+    POLYGON_API_KEY=your_actual_api_key_here
+```
+
+5. **Get started!**
+Run the Jupyter notebook:
+```bash
+    jupyter notebook notebooks/01_data_exploration.ipynb
+```

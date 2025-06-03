@@ -1,10 +1,12 @@
 # src/data/download_data.py
-
+from dotenv import load_dotenv
 from polygon import RESTClient
 import pandas as pd
 import os
 
-POLYGON_API_KEY = "cZPAWpQIBmE1xDrvqDaYEiVdXDC3urJ6"
+POLYGON_API_KEY = os.getenv("POLYGON_API_KEY")
+if not POLYGON_API_KEY:
+    raise ValueError("[!] POLYGON_API_KEY not set in environment variables.")
 
 def download_stock_data(ticker, start_date, end_date, save_csv=True):
     print(f"📥 Downloading {ticker} from Polygon.io...")
