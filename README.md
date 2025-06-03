@@ -25,8 +25,8 @@ cd AlphaVestra
 
 2. **Create a virtual environment:**
 ```bash
-python -m venv .venv
-source .venv/bin/activate  # or .venv\Scripts\activate on Windows
+python -m venv venv
+source venv/bin/activate  # or .venv\Scripts\activate on Windows
 ```
 
 3. **Install dependencies:**
@@ -41,6 +41,7 @@ POLYGON_API_KEY=your_actual_api_key_here
 ```
 
 5. **Get started!**
+
 Run the Jupyter notebook:
 ```bash
 jupyter notebook notebooks/01_data_exploration.ipynb
