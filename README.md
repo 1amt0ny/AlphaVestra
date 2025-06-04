@@ -33,7 +33,7 @@ pip install -r requirements.txt
 ```
 
 4. **Create a `.env` file:**
-We use Polygon.io to acquire the data. 
+I use Polygon.io to acquire the data. Store the API key in the `.env` file:
 ```bash
 POLYGON_API_KEY=your_actual_api_key_here
 ```
