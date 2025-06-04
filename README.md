@@ -1,7 +1,5 @@
 ![Banner](assets/banner.png)
 
-A data-driven tool for evaluating individual stocks and surfacing actionable signals using historical price data and rule-based or machine learning models.
-
 ## Features
 - Rule-based strategies (moving averages, RSI, etc.)
 - Machine Learning predictions using XGBoost
