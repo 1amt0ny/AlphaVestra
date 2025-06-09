@@ -28,6 +28,10 @@ POLYGON_API_KEY = os.getenv("POLYGON_API_KEY")
 if not POLYGON_API_KEY:
     raise ValueError("[!] POLYGON_API_KEY not set in environment variables.")
 
+# Determine absolute path to project root, ensuring correct data folder
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir, os.pardir))
+DATA_RAW_DIR = os.path.join(PROJECT_ROOT, "data", "raw")
+
 # -----------------------------------------------------------------------------
 # Function: download_stock_data
 # -----------------------------------------------------------------------------
@@ -85,10 +89,10 @@ def download_stock_data(ticker, start_date, end_date, save_csv=True):
 
         # If save_csv is True, write the DataFrame to data/raw/{ticker}.csv
         if save_csv:
-            output_path = os.path.join("data", "raw", f"{ticker}.csv")
-            os.makedirs(os.path.dirname(output_path), exist_ok=True) # Create directory if it doesn't exist
+            os.makedirs(DATA_RAW_DIR, exist_ok=True) # Create directory if it doesn't exist
+            output_path = os.path.join(DATA_RAW_DIR, f"{ticker}.csv")
             df.to_csv(output_path, index=False)
-            print(f"[✓] Saved to {output_path}")
+            print(f"[✓] Data saved to {output_path}")
 
         return df
 

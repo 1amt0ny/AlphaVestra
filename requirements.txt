@@ -13,3 +13,4 @@ jupyterlab
 # If you plan to use machine learning later
 scikit-learn
 xgboost
+seaborn
