@@ -24,7 +24,8 @@ cd AlphaVestra
 2. **Setup the environment:**
 ```bash
 bash setup.sh
-``` 
+```
+
 This will create a virtual environment and install the OpenMP runtime (libomp) required by XGBoost on macOS via Homebrew, and then it will upgrade `pip` and install all Python packages listed in `requirements.txt`.
 
 <!-- 2. **Create a virtual environment:**
@@ -39,12 +40,14 @@ pip install -r requirements.txt
 ``` -->
 
 3. **Create a `.env` file:**
+
 I use Polygon.io to acquire the data. Store the API key in the `.env` file:
 ```bash
 POLYGON_API_KEY=your_actual_api_key_here
 ```
 
 4. **Get started!**
+
 Activate the virtual environment:
 ```bash
 source .venv/bin/activate
