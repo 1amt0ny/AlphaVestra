@@ -9,8 +9,8 @@
 ## Project Structure
 - `notebooks/`: Analysis and prototyping
 - `src/`: Modular and reusable code
-- `data/`: Historical stock data (downloaded with `yfinance`)
-- `models/`: Saved ML models
+- `data/`: Historical stock data (downloaded with `Polygon`)
+- `models/`: Saved ML models    
 - `interface/`: Front-end for displaying suggestions
 
 ## Setup
