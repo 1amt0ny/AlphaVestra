@@ -44,7 +44,7 @@ I use Polygon.io to acquire the data. Store the API key in the `.env` file:
 POLYGON_API_KEY=your_actual_api_key_here
 ```
 
-6. **Get started!**
+4. **Get started!**
 Activate the virtual environment:
 ```bash
 source .venv/bin/activate
