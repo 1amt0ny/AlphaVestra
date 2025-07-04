@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-# 1) Create virtual environment (skip if already exists)
+# 1) Create a virtual environment
 if [ ! -d ".venv" ]; then
   echo "Creating virtual environment…"
   python3 -m venv .venv
